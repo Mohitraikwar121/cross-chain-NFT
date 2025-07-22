@@ -5,6 +5,7 @@ interface IERC721 {
     function ownerOf(uint256 tokenId) external view returns (address);
     function transferFrom(address from, address to, uint256 tokenId) external;
 }
+
 contract CrossChainNFTBridge {
 
     address public admin;
@@ -21,7 +22,7 @@ contract CrossChainNFTBridge {
         _;
     }
 
-    // 1. Teleport NFT from source to target chain (represented here by marking the token as teleported)
+    // 1. Teleport NFT from source to target chain (mark as teleported and escrow it)
     function teleportNFT(
         string memory sourceChain,
         string memory targetChain,
@@ -31,17 +32,17 @@ contract CrossChainNFTBridge {
         IERC721 nft = IERC721(nftContract);
         address owner = nft.ownerOf(tokenId);
 
-        // Mark the token as teleported from the source chain
+        // Mark token as teleported
         crossChainTokens[sourceChain][tokenId] = true;
 
-        // Emit an event for the teleportation
+        // Emit teleport event
         emit TokenTeleported(sourceChain, targetChain, tokenId, owner);
 
-        // Transfer NFT to bridge contract (escrow on source chain)
+        // Escrow the token in the bridge contract
         nft.transferFrom(owner, address(this), tokenId);
     }
 
-    // 2. Claim Teleported NFT on target chain
+    // 2. Claim teleported NFT on target chain
     function claimTeleportedNFT(
         string memory sourceChain,
         string memory targetChain,
@@ -53,18 +54,23 @@ contract CrossChainNFTBridge {
         IERC721 nft = IERC721(nftContract);
         address owner = msg.sender;
 
-        // Transfer NFT to the recipient on the target chain
+        // Transfer to new owner
         nft.transferFrom(address(this), owner, tokenId);
 
-        // Mark the token as claimed on target chain
+        // Clear teleport flag
         crossChainTokens[sourceChain][tokenId] = false;
 
-        // Emit an event for the teleportation claim
+        // Emit claim event (same event reused for clarity)
         emit TokenTeleported(sourceChain, targetChain, tokenId, owner);
     }
 
-    // 3. Admin function to clear up any incorrectly teleported tokens
+    // 3. Admin can manually clear teleport status if incorrect
     function clearTeleportedNFT(string memory sourceChain, uint256 tokenId) external onlyAdmin {
         crossChainTokens[sourceChain][tokenId] = false;
+    }
+
+    // 4. Utility: Check if an NFT has been teleported
+    function checkTeleportStatus(string memory sourceChain, uint256 tokenId) external view returns (bool) {
+        return crossChainTokens[sourceChain][tokenId];
     }
 }
