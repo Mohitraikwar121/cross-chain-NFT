@@ -8,7 +8,7 @@ The solution provides functionality to mark NFTs as "teleported" on one chain an
 ## Project Vision
 The vision of this project is to create an interoperable platform for NFTs across different blockchains. It aims to improve the NFT ecosystem by making digital assets portable across blockchain networks, enabling users to access NFTs across ecosystems, thus expanding the utility and reach of NFTs globally.
 
-## Key Features
+## Key Features :
 - **Ownership Management**: The contract ensures that ownership of NFTs is transferred to the correct user upon teleportation.
 - **Admin Controls**: The admin has the ability to clear incorrectly teleported tokens, ensuring that the system remains secure and functional.
 - **Teleportation and Claiming Events**: The system emits events for each teleportation and claim action, providing traceability and transparency.
