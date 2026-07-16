@@ -20,14 +20,13 @@ The vision of this project is to create an interoperable platform for NFTs acros
 - **Cross-Platform Integration**: Integrate with various NFT marketplaces and platforms, enabling users to teleport NFTs directly from these platforms.
 
 ## Getting Started
-
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v14.x or above)
 - [Truffle](https://www.trufflesuite.com/truffle) for compiling, deploying, and testing the contract
 - [Ganache](https://www.trufflesuite.com/ganache) for local Ethereum blockchain simulation
 
-### Installation
 
+### Installation
 1. Clone the repository:
     ```bash
     git clone https://github.com/yourusername/Cross-Chain-NFT-Teleportation-Bridge.git
