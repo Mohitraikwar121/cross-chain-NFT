@@ -26,7 +26,7 @@ The vision of this project is to create an interoperable platform for NFTs acros
 - [Ganache](https://www.trufflesuite.com/ganache) for local Ethereum blockchain simulation
 
 
-### Installation
+Installation
 1. Clone the repository:
     ```bash
     git clone https://github.com/yourusername/Cross-Chain-NFT-Teleportation-Bridge.git
@@ -43,7 +43,7 @@ The vision of this project is to create an interoperable platform for NFTs acros
     truffle migrate --network development
     ```
 
-### Usage
+Usage
 
 - Use the contract’s methods to teleport or claim NFTs across chains.
 - Ensure that both the source and target blockchain have compatible ERC-721 contracts deployed.
