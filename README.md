@@ -25,7 +25,6 @@ The vision of this project is to create an interoperable platform for NFTs acros
 - [Truffle](https://www.trufflesuite.com/truffle) for compiling, deploying, and testing the contract
 - [Ganache](https://www.trufflesuite.com/ganache) for local Ethereum blockchain simulation
 
-
 Installation
 1. Clone the repository:
     ```bash
