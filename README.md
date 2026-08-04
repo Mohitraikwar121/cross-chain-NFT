@@ -4,6 +4,7 @@
 The **Cross-Chain NFT Teleportation Bridge** is a smart contract-based solution aimed at enabling seamless transfer and teleportation of Non-Fungible Tokens (NFTs) across multiple blockchains. This bridge allows users to send their NFTs from one blockchain to another, ensuring the ownership and the NFT itself are securely managed during transit.
 The solution provides functionality to mark NFTs as "teleported" on one chain and "claimed" on another, providing an efficient mechanism for cross-chain NFT migration.
 
+
 ## Project Vision
 The vision of this project is to create an interoperable platform for NFTs across different blockchains. It aims to improve the NFT ecosystem by making digital assets portable across blockchain networks, enabling users to access NFTs across ecosystems, thus expanding the utility and reach of NFTs globally.
 
