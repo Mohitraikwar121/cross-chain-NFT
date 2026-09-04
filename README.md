@@ -2,7 +2,7 @@
 
 > **Seamlessly teleport NFTs across blockchain networks while maintaining secure ownership management and transparent cross-chain tracking.**
 
----
+
 
 ## 📌 Project Description
 
@@ -12,7 +12,7 @@ The bridge allows users to send their NFTs from one blockchain to another while 
 
 The solution provides functionality to mark NFTs as **"teleported"** on one chain and **"claimed"** on another, providing an efficient mechanism for cross-chain NFT migration.
 
----
+
 
 ## 🎯 Project Vision
 
@@ -20,7 +20,7 @@ The vision of this project is to create an **interoperable platform for NFTs acr
 
 It aims to improve the NFT ecosystem by making digital assets portable across blockchain networks, enabling users to access NFTs across different ecosystems and expanding the **utility and reach of NFTs globally**.
 
----
+
 
 ## ✨ Key Features
 
@@ -40,7 +40,7 @@ The system emits events for each **teleportation** and **claim** action.
 
 These events provide traceability and transparency for NFT movement and related contract activity.
 
----
+
 
 ## 🔄 NFT Teleportation Flow
 
@@ -48,34 +48,34 @@ The bridge follows a simple teleportation and claiming process:
 
 ```text
 ┌─────────────────────┐
-│   Source Blockchain │
-│                     │
-│       NFT           │
+│   Source Blockchain     │
+│                         │
+│       NFT               │
 └──────────┬──────────┘
            │
            │ Teleport
            ▼
 ┌─────────────────────┐
-│   Bridge Contract   │
-│                     │
-│ NFT marked as       │
-│ "Teleported"        │
+│   Bridge Contract       │
+│                         │
+│ NFT marked as           │
+│ "Teleported"            │
 └──────────┬──────────┘
            │
            │ Cross-Chain
            │ Migration
            ▼
 ┌─────────────────────┐
-│ Target Blockchain   │
-│                     │
-│ NFT marked as       │
-│ "Claimed"           │
+│ Target Blockchain       │
+│                         │
+│ NFT marked as           │
+│ "Claimed"               │
 └─────────────────────┘
-```
+
 
 The source chain records the NFT as **teleported**, while the destination chain provides the functionality to **claim** the NFT.
 
----
+
 
 ## 🧩 Project Components
 
@@ -92,15 +92,15 @@ The primary functionality includes:
 * Teleportation events
 * Claim events
 
----
+
 
 ## 📜 Smart Contract
 
 ### Contract Address
 
-```text
+
 0x33b9051929ced734bb131097432e9b2a4aa19581
-```
+
 
 The contract provides the core functionality required for managing the NFT teleportation and claiming process.
 
@@ -116,7 +116,7 @@ The project uses the following technologies:
 * **Node.js** — Development environment
 * **ERC-721** — NFT standard
 
----
+
 
 ## 📋 Prerequisites
 
@@ -138,7 +138,7 @@ Truffle is used for:
 
 Ganache is used to simulate a **local Ethereum blockchain environment** for development and testing.
 
----
+
 
 ## 🚀 Getting Started
 
@@ -146,27 +146,27 @@ Ganache is used to simulate a **local Ethereum blockchain environment** for deve
 
 Clone the project repository:
 
-```bash
+
 git clone <repository-url>
-```
+
 
 Navigate into the project directory:
 
-```bash
-cd <project-directory>
-```
 
----
+cd <project-directory>
+
+
+
 
 ### 2. Install Dependencies
 
 Install the required project dependencies:
 
-```bash
-npm install
-```
 
----
+npm install
+
+
+
 
 ### 3. Start Ganache
 
@@ -174,17 +174,17 @@ Start **Ganache** to provide a local Ethereum blockchain environment for deployi
 
 Make sure the Truffle network configuration is compatible with the Ganache network.
 
----
+
 
 ### 4. Compile the Smart Contract
 
 Compile the contracts using Truffle:
 
-```bash
-truffle compile
-```
 
----
+truffle compile
+
+
+
 
 ### 5. Deploy the Contract
 
