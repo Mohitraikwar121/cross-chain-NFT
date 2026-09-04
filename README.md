@@ -3,7 +3,6 @@
 > **Seamlessly teleport NFTs across blockchain networks while maintaining secure ownership management and transparent cross-chain tracking.**
 
 
-
 ## 📌 Project Description
 
 The **Cross-Chain NFT Teleportation Bridge** is a smart contract-based solution aimed at enabling seamless transfer and teleportation of **Non-Fungible Tokens (NFTs)** across multiple blockchains.
@@ -19,7 +18,6 @@ The solution provides functionality to mark NFTs as **"teleported"** on one chai
 The vision of this project is to create an **interoperable platform for NFTs across different blockchains**.
 
 It aims to improve the NFT ecosystem by making digital assets portable across blockchain networks, enabling users to access NFTs across different ecosystems and expanding the **utility and reach of NFTs globally**.
-
 
 
 ## ✨ Key Features
@@ -46,7 +44,6 @@ These events provide traceability and transparency for NFT movement and related 
 
 The bridge follows a simple teleportation and claiming process:
 
-```text
 ┌─────────────────────┐
 │   Source Blockchain     │
 │                         │
@@ -76,7 +73,6 @@ The bridge follows a simple teleportation and claiming process:
 The source chain records the NFT as **teleported**, while the destination chain provides the functionality to **claim** the NFT.
 
 
-
 ## 🧩 Project Components
 
 The project is centered around a smart contract responsible for managing the NFT teleportation process.
@@ -93,7 +89,6 @@ The primary functionality includes:
 * Claim events
 
 
-
 ## 📜 Smart Contract
 
 ### Contract Address
@@ -101,10 +96,7 @@ The primary functionality includes:
 
 0x33b9051929ced734bb131097432e9b2a4aa19581
 
-
 The contract provides the core functionality required for managing the NFT teleportation and claiming process.
-
----
 
 ## 🛠️ Technology Stack
 
@@ -115,8 +107,6 @@ The project uses the following technologies:
 * **Ganache** — Local Ethereum blockchain simulation
 * **Node.js** — Development environment
 * **ERC-721** — NFT standard
-
-
 
 ## 📋 Prerequisites
 
@@ -138,25 +128,13 @@ Truffle is used for:
 
 Ganache is used to simulate a **local Ethereum blockchain environment** for development and testing.
 
-
-
 ## 🚀 Getting Started
-
 ### 1. Clone the Repository
 
 Clone the project repository:
-
-
 git clone <repository-url>
-
-
 Navigate into the project directory:
-
-
 cd <project-directory>
-
-
-
 
 ### 2. Install Dependencies
 
