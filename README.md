@@ -69,9 +69,7 @@ The bridge follows a simple teleportation and claiming process:
 │ "Claimed"               │
 └─────────────────────┘
 
-
 The source chain records the NFT as **teleported**, while the destination chain provides the functionality to **claim** the NFT.
-
 
 ## 🧩 Project Components
 
@@ -139,12 +137,7 @@ cd <project-directory>
 ### 2. Install Dependencies
 
 Install the required project dependencies:
-
-
 npm install
-
-
-
 
 ### 3. Start Ganache
 
@@ -157,20 +150,12 @@ Make sure the Truffle network configuration is compatible with the Ganache netwo
 ### 4. Compile the Smart Contract
 
 Compile the contracts using Truffle:
-
-
 truffle compile
-
-
 
 
 ### 5. Deploy the Contract
 
-Deploy the contract using Truffle:
-
-```bash
-truffle migrate
-```
+Deploy the contract using Truffle
 
 For a fresh deployment:
 
