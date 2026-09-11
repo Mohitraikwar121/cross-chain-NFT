@@ -2,7 +2,6 @@
 
 > **Seamlessly teleport NFTs across blockchain networks while maintaining secure ownership management and transparent cross-chain tracking.**
 
-
 ## 📌 Project Description
 
 The **Cross-Chain NFT Teleportation Bridge** is a smart contract-based solution aimed at enabling seamless transfer and teleportation of **Non-Fungible Tokens (NFTs)** across multiple blockchains.
