@@ -67,8 +67,8 @@ The primary functionality includes:
 ## 📜 Smart Contract
 ### Contract Address
 0x33b9051929ced734bb131097432e9b2a4aa19581
-
 The contract provides the core functionality required for managing the NFT teleportation and claiming process.
+
 ## 🛠️ Technology Stack
 The project uses the following technologies:
 * **Solidity** — Smart contract development
@@ -111,13 +111,13 @@ Make sure the Truffle network configuration is compatible with the Ganache netwo
 Compile the contracts using Truffle:
 truffle compile
 
-
 ### 5. Deploy the Contract
 Deploy the contract using Truffle
 For a fresh deployment:
 
 ### 6. Test the Contract
 Run the available Truffle tests:
+
 
 ## 💻 Usage
 Once the smart contract has been deployed, use the contract's methods to **teleport or claim NFTs across chains**.
@@ -132,7 +132,6 @@ The general workflow is:
 
 ## 🔗 ERC-721 Compatibility
 The bridge is designed to work with **ERC-721 NFTs**.
-
 Before using the bridge, ensure that:
 * The NFT contract is ERC-721 compatible.
 * Compatible ERC-721 contracts are deployed on the source and target blockchain.
@@ -180,7 +179,6 @@ Cross-Chain-NFT-Teleportation-Bridge/
 ├── truffle-config.js
 ├── package.json
 └── README.md
-
 > The exact files and contract names may vary depending on the implementation in the repository.
 
 ## 🧪 Development & Testing
