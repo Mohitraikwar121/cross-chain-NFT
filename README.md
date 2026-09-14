@@ -34,15 +34,15 @@ The bridge follows a simple teleportation and claiming process:
            │ Teleport
            ▼
 ┌─────────────────────┐
-│   Bridge Contract   │
-│                     │
-│ NFT marked as       │
-│ "Teleported"        │
+│   Bridge Contract       │
+│                         │
+│ NFT marked as           │
+│ "Teleported"            │
 └──────────┬──────────┘
-           │
-           │ Cross-Chain
-           │ Migration
-           ▼
+             │
+             │ Cross-Chain
+             │ Migration
+             ▼
 ┌─────────────────────┐
 │ Target Blockchain   │
 │                     │
