@@ -26,9 +26,9 @@ These events provide traceability and transparency for NFT movement and related 
 The bridge follows a simple teleportation and claiming process:
 
 ┌─────────────────────┐
-│   Source Blockchain │
-│                     │
-│       NFT           │
+│   Source Blockchain     │
+│                         │
+│       NFT               │
 └──────────┬──────────┘
            │
            │ Teleport
@@ -44,10 +44,10 @@ The bridge follows a simple teleportation and claiming process:
              │ Migration
              ▼
 ┌─────────────────────┐
-│ Target Blockchain   │
-│                     │
-│ NFT marked as       │
-│ "Claimed"           │
+│ Target Blockchain       │
+│                         │
+│ NFT marked as           │
+│ "Claimed"               │
 └─────────────────────┘
 
 The source chain records the NFT as **teleported**, while the destination chain provides the functionality to **claim** the NFT.
@@ -145,7 +145,6 @@ These events provide a transparent record of:
 Event-based tracking makes it possible to trace important actions performed through the bridge contract.
 
 ## 🔐 Administrative Controls
-
 The project includes administrative functionality to help maintain the integrity of the teleportation process.
 The admin can **clear incorrectly teleported tokens**, providing a mechanism for handling incorrect teleportation states and maintaining the functionality of the system.
 
