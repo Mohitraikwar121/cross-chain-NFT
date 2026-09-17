@@ -17,7 +17,7 @@ This provides controlled ownership management throughout the NFT teleportation p
 
 ### 🛡️ Admin Controls
 The admin has the ability to **clear incorrectly teleported tokens**, helping ensure that the system remains secure and functional.
-
+ 
 ### 📡 Teleportation and Claiming Events
 The system emits events for each **teleportation** and **claim** action.
 These events provide traceability and transparency for NFT movement and related contract activity.
