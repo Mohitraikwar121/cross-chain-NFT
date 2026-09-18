@@ -1,4 +1,4 @@
-# 🌉 Cross-Chain NFT Teleportation Bridge
+# 🌉 Cross-Chain NFT Teleportation Bridge. 
 > **Seamlessly teleport NFTs across blockchain networks while maintaining secure ownership management and transparent cross-chain tracking.**
 ## 📌 Project Description
 
